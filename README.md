@@ -17,7 +17,7 @@ bun stat:dev
 - Can verify the file 'package.json' in the scrips section to look at all methods available in  the project such as test, check format, types, etc
 ```
 
-Open [http://localhost:3000](http://localhost:8080) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the
 file.
