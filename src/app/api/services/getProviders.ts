@@ -24,7 +24,10 @@ const GetProviders = () => {
           if (response.ok) {
             const data = await response.json();
             const providers = checkProvidersData(data);
-            setProviders(providers);
+            setProviders(providers.validProviders);
+            if (providers.invalidCount > 0)
+              // eslint-disable-next-line no-console
+              console.warn('proveedores con data corrupta:', providers.invalidCount);
             setLoading(false);
           } else {
             setError(`HTTP error! Status: ${response.status}`);
